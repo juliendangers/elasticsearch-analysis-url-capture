@@ -8,6 +8,8 @@ import org.apache.lucene.analysis.util.CharArraySet;
 import org.apache.lucene.util.Version;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * A token filter that only keeps url tokens.
@@ -19,7 +21,7 @@ public class UrlCaptureTokenFilter extends TokenFilter {
 
     private final CharTermAttribute termAttribute = addAttribute(CharTermAttribute.class);
 
-    private final String[] expressions = {"@^(https?|ftp)://[^\\s/$.?#].[^\\s]*$@iS"};
+    private final Pattern urlPattern = Pattern.compile("^(https?|ftp)://[^\\s/$.?#].[^\\s]*$",Pattern.CASE_INSENSITIVE);
 
     public UrlCaptureTokenFilter(TokenStream in) {
         super(in);
@@ -30,11 +32,12 @@ public class UrlCaptureTokenFilter extends TokenFilter {
         while (input.incrementToken()) {
             final String term = termAttribute.toString();
 
-            boolean match = false;
-            for (String regexp: expressions) {
-                match = term.matches(regexp) || match;
-            }
-            return match;
+            Matcher matcher = urlPattern.matcher(term);
+
+            if (matcher.find())
+                return true;
+            else
+                return false;
         }
         return false;
     }
