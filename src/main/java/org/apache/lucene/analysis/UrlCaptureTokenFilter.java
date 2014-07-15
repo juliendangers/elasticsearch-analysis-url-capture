@@ -18,7 +18,6 @@ import java.io.IOException;
 public class UrlCaptureTokenFilter extends TokenFilter {
 
     private final CharTermAttribute termAttribute = addAttribute(CharTermAttribute.class);
-    private final PositionIncrementAttribute posIncAttribute = addAttribute(PositionIncrementAttribute.class);
 
     private final String[] expressions = {"@^(https?|ftp)://[^\\s/$.?#].[^\\s]*$@iS"};
 
