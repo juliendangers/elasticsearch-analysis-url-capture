@@ -14,5 +14,5 @@ Installation
 
 In order to install the plugin, simply run: 
 
-`bin/plugin --install analysis-url-capture --url "https://github.com/juliendangers/elasticsearch-analysis-url-capture/raw/es-1.2/dist/elasticsearch-analysis-url-capture-1.2.1.zip"`
+`bin/plugin --install analysis-url-capture --url "https://github.com/juliendangers/elasticsearch-analysis-url-capture/raw/master/dist/elasticsearch-analysis-url-capture-2.0.0-SNAPSHOT.zip"`
 

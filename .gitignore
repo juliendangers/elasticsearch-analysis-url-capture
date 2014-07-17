@@ -1,3 +1,4 @@
 .idea/
 elasticsearch-analysis-url-capture.iml
 target/
+out/
