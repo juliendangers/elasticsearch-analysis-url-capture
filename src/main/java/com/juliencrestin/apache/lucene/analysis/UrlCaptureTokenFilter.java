@@ -1,11 +1,8 @@
-package org.apache.lucene.analysis;
+package com.juliencrestin.apache.lucene.analysis;
 
 import org.apache.lucene.analysis.TokenFilter;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
-import org.apache.lucene.analysis.tokenattributes.PositionIncrementAttribute;
-import org.apache.lucene.analysis.util.CharArraySet;
-import org.apache.lucene.util.Version;
 
 import java.io.IOException;
 import java.util.regex.Matcher;

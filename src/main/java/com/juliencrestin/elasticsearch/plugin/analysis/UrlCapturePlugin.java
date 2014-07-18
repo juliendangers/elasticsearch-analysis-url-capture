@@ -1,7 +1,7 @@
-package org.elasticsearch.plugin.analysis;
+package com.juliencrestin.elasticsearch.plugin.analysis;
 
 import org.elasticsearch.index.analysis.AnalysisModule;
-import org.elasticsearch.index.analysis.UrlCaptureAnalysisBinderProcessor;
+import com.juliencrestin.elasticsearch.index.analysis.UrlCaptureAnalysisBinderProcessor;
 import org.elasticsearch.plugins.AbstractPlugin;
 
 /**
@@ -10,7 +10,7 @@ public class UrlCapturePlugin extends AbstractPlugin {
 
     @Override
     public String name() {
-        return "url_capture";
+        return "analysis_url_capture";
     }
 
     @Override

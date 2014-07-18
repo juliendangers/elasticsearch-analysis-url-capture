@@ -1,4 +1,4 @@
-package org.elasticsearch.index.analysis;
+package com.juliencrestin.elasticsearch.index.analysis;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.elasticsearch.common.inject.Inject;
@@ -7,7 +7,8 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;
 import org.elasticsearch.index.Index;
 import org.elasticsearch.index.settings.IndexSettings;
-import org.apache.lucene.analysis.UrlCaptureTokenFilter;
+import org.elasticsearch.index.analysis.AbstractTokenFilterFactory;
+import com.juliencrestin.apache.lucene.analysis.UrlCaptureTokenFilter;
 
 /**
  *

@@ -1,4 +1,6 @@
-package org.elasticsearch.index.analysis;
+package com.juliencrestin.elasticsearch.index.analysis;
+
+import org.elasticsearch.index.analysis.AnalysisModule;
 
 /**
  */
