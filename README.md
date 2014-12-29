@@ -8,6 +8,20 @@ For master elasticsearch versions, look at master branch.
 
 For 1.2.x elasticsearch versions, look at es-1.2 branch.
 
+Versions
+--------
+
+----------------------
+|Elasticsearch|Plugin|
+-----------------------
+|master|2.0.0-SNAPSHOT|
+-----------------------
+|1.4|1.4.0|
+-----------
+|1.3|1.3.0|
+-----------
+|1.2|1.2.1|
+-----------
 
 Installation
 ------------
