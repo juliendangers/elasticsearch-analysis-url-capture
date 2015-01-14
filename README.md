@@ -6,7 +6,7 @@ an elasticsearch token filter which only keeps url
 this plugin is now useless with ES 1.4.x
 ----------------------------------------
 
-**simply create a custom analyzer, with an uax_url_email tokenizer, and a keep_types tokenFilter which only keeps "<URL>" type. This way you will have URLs and IPs :)**
+**simply create a custom analyzer, with an uax_url_email tokenizer, and a keep_types tokenFilter which only keeps "*<URL>*" type. This way you will have URLs and IPs :)**
 
 For master elasticsearch versions, look at master branch.
 
